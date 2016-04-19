@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Apple Farmer</string>
+    <string name="title_actvity_upgrade_main">Améliorations</string>
+    <string name="title_actvity_manage_main">Paramètres</string>
+    <string name="title_actvity_about_main">A propos</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Paramètres</string>
+
+    <string name="apple_number"></string>
+</resources>

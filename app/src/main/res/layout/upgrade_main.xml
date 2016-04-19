@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="6dip" >
+
+
+    <RelativeLayout
+        android:id="@+id/upgrade_fermier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- 1er amélioration -->
+        <ImageView
+            android:id="@+id/fermier"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/apple_button_default"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/fermier_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_toRightOf="@id/fermier"
+            android:gravity="center_vertical"
+            android:text="Fermier"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/fermier_description"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:layout_below="@id/fermier_name"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/fermier"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="+1 Pomme par seconde !"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/upgrade_pommier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_below="@id/upgrade_fermier">
+        <!-- 2eme amélioration -->
+        <ImageView
+            android:id="@+id/pommier"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/apple_button_pressed"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/pommier_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_toRightOf="@id/pommier"
+            android:gravity="center_vertical"
+            android:text="Pommier"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/pommier_description"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:layout_below="@id/pommier_name"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/pommier"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="+2 Pommes par seconde !"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

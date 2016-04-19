@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beola.applefarmer.applefarmer">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpgradeMain"
+            android:label="@string/title_actvity_upgrade_main"
+            android:parentActivityName="com.beola.applefarmer.applefarmer.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.beola.applefarmer.applefarmer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ManageMain"
+            android:label="@string/title_actvity_manage_main"
+            android:parentActivityName="com.beola.applefarmer.applefarmer.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.beola.applefarmer.applefarmer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutMain"
+            android:label="@string/title_actvity_about_main"
+            android:parentActivityName="com.beola.applefarmer.applefarmer.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.beola.applefarmer.applefarmer.MainActivity" />
+        </activity>
+
+    </application>
+
+    <!-- Permet de savoir si l'utilisateur à changé la date de son téléphone -->
+    <receiver android:name=".TimeChangedReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.TIME_SET" />
+        </intent-filter>
+    </receiver>
+
+</manifest>
